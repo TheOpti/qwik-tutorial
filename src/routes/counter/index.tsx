@@ -1,6 +1,6 @@
 import { component$, useStore, useClientEffect$ } from '@builder.io/qwik';
 
-export default component$(( ) => {
+export default component$(() => {
   return (
     <>
       <span>Hello world</span>
@@ -8,7 +8,7 @@ export default component$(( ) => {
         <Clock />
       </div>
     </>
-  )
+  );
 });
 
 export const Clock = component$(() => {
@@ -19,7 +19,7 @@ export const Clock = component$(() => {
     const update = () => {
       console.debug('inside update');
       state.time = new Date().toLocaleTimeString();
-    }
+    };
 
     update();
 
@@ -27,5 +27,5 @@ export const Clock = component$(() => {
     return () => clearInterval(interval);
   });
 
-  return <span>{state.time}</span>
+  return <span>{state.time}</span>;
 });

@@ -1,4 +1,9 @@
-import { component$, useClientEffect$, useStore, useStylesScoped$ } from '@builder.io/qwik';
+import {
+  component$,
+  useClientEffect$,
+  useStore,
+  useStylesScoped$,
+} from '@builder.io/qwik';
 import { DocumentHead, useLocation } from '@builder.io/qwik-city';
 import styles from './flower.css?inline';
 

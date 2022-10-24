@@ -45,14 +45,14 @@ export const MoviePoster = component$((props: { movie: Result }) => {
       <div>{props.movie.genre_ids}</div>
       <div>
         <img
-          src={"https://image.tmdb.org/t/p/w342/" + props.movie.poster_path}
+          src={'https://image.tmdb.org/t/p/w342/' + props.movie.poster_path}
         />
       </div>
       <div class="rating">
         <div class="bar" onClick$={() => console.log(rating)}>
           <div
             class="front"
-            style={{ width: props.movie.vote_average / 2 + "em" }}
+            style={{ width: props.movie.vote_average / 2 + 'em' }}
           >
             ★★★★★
           </div>
