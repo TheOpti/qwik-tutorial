@@ -5,6 +5,23 @@ import { Link } from '@builder.io/qwik-city';
 export default component$(() => {
   return (
     <div>
+      <h1>List of routes so far:</h1>
+
+      <ul>
+        <li>
+          <a href="/clock">Clock demo</a>
+        </li>
+        <li>
+          <a href="/counter">Counter demo</a>
+        </li>
+        <li>
+          <a href="/flower">Flower demo (default one)</a>
+        </li>
+        <li>
+          <a href="/movies">Movies demo</a>
+        </li>
+      </ul>
+
       <h1>
         Welcome to Qwik <span class="lightning">⚡️</span>
       </h1>
